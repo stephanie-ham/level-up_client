@@ -1,0 +1,28 @@
+.games, .events, .profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button__container, .profile__info, .profile__events {
+    width: 100%;
+}
+
+.list__header, .profile__header, .events__header {
+    width: 100%;
+    font-weight: bold;
+}
+
+.game, .event {
+    border: cornflowerblue 2px solid;
+    padding: 1rem 3rem;
+    margin: 1rem;
+    width: 20rem;
+}
+
+.game__title, .event__title {
+    font-size: large;
+    color: cornflowerblue;
+}
+
