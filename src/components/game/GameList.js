@@ -14,17 +14,19 @@ export const GameList = (props) => {
   return (
     <>
       <article className="games">
-        <header className="events__header">
-          <h1>Level Up Game Events</h1>
+        <header className="list__header">
+          <h1>Level Up Games</h1>
         </header>
-        <button
-          className="btn btn-2 btn-sep icon-create"
-          onClick={() => {
-            history.push({ pathname: "/games/new" });
-          }}
-        >
-          Register New Game
-        </button>
+        <div className="button__container">
+          <button
+            className="btn btn-2 btn-sep icon-create"
+            onClick={() => {
+              history.push({ pathname: "/games/new" });
+            }}
+          >
+            Register New Game
+          </button>
+        </div>
         {games.map((game) => {
           return (
             <section key={`game--${game.id}`} className="game">
