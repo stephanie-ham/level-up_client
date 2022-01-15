@@ -33,7 +33,13 @@ export const EventList = (props) => {
             <div className="event__title">{event.description}</div>
             <div>
               <div className="event__game">{event.game.title}</div>
-              {event.date} @ {event.time}
+              {new Date(event.date).toLocaleDateString("en-US", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+              @ {event.time}
             </div>
             {event.joined ? (
               <button
